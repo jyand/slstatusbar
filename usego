@@ -1,4 +1,0 @@
-probably best, os/exec looks better than Lua's os library
-both languages seem to be good w/ C interop, if necessary
-easier to build/install w/ go, just add a few lines to the make file
-I think go binary will run faster, unless using LuaJIT

@@ -30,6 +30,7 @@ func PipeStatusBar(outof *exec.Cmd, into *exec.Cmd) {
                                 io.WriteString(input, string(output))
                         }()
                         into.Run()
+                        into.Wait()
                 }
         }
 }
