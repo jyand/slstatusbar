@@ -1,3 +1,7 @@
+/* FOR EXPERIMENTATION ONLY
+the os pkg (and even os/exec) are better suited
+for low-level stuff, in comparison to Lua's os library
+*/
 package main
 
 import (

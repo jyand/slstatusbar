@@ -62,7 +62,9 @@ install: all
 	mkdir -p "$(DESTDIR)$(MANPREFIX)/man1"
 	cp -f slstatus.1 "$(DESTDIR)$(MANPREFIX)/man1"
 	chmod 644 "$(DESTDIR)$(MANPREFIX)/man1/slstatus.1"
+	cp -f slstatusbar.lua "$(DESTDIR)$(PREFIX)/bin/slstatusbar"
 
 uninstall:
 	rm -f "$(DESTDIR)$(PREFIX)/bin/slstatus"
 	rm -f "$(DESTDIR)$(MANPREFIX)/man1/slstatus.1"
+	rm -f "$(DESTDIR)$(PREFIX)/bin/slstatusbar"
