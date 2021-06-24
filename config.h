@@ -66,11 +66,11 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
 	{ cpu_freq, "%s",           "" },
-	{ separator, "%s",           "Hz    " },
+	{ separator, "%s",           "Hz      " },
 	{ cpu_perc, "%s",           "" },
 	{ separator, "%s",           "%    " },
 	{ ram_used, "%s",           "" },
-	{ separator, "%s",           "B        " },
+	{ separator, "%s",           "B         " },
 	{ run_command, "%s",           "sensors -f | grep Package | cut -d '+' -f 2 | cut -d ' ' -f 1" },
 	{ separator, "%s",           "        " },
 	{ separator, "%s",           "        " },
