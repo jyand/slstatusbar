@@ -6,8 +6,8 @@ bottom = false
 -- empty strings for default values
 lemonopts = {
         font = "\"-b&h-lucida-bold-r-normal-sans-12-120-75-75-p-79-iso10646-1\"",
-        ul = "4", -- underline/overline size
-        UC = "'#000000'", --underline color
+        ul = "0", -- underline/overline size
+        UC = "'#ffffff'", --underline color
         BG = "'#000000'", -- background color
         FG = "'#ffffff'" -- foreground color
 }

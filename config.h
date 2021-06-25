@@ -65,6 +65,9 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
+	{ separator, "%s",           "    " },
+	{ run_command, "%s",           "bspc query -D --names -d" },
+	{ separator, "%s",           "                " },
 	{ cpu_freq, "%s",           "" },
 	{ separator, "%s",           "Hz      " },
 	{ cpu_perc, "%s",           "" },
@@ -73,10 +76,9 @@ static const struct arg args[] = {
 	{ separator, "%s",           "B         " },
 	{ run_command, "%s",           "sensors -f | grep Package | cut -d '+' -f 2 | cut -d ' ' -f 1" },
 	{ separator, "%s",           "        " },
-	{ separator, "%s",           "        " },
-	{ run_command, "%s",           "xtitle" },
-	{ separator, "%s",           "        " },
 	{ run_command, "%s",           "pamixer --get-volume-human" },
 	{ separator, "%s",           "        " },
 	{ datetime, "%s",           "%F %T" },
+	{ separator, "%s",           "                                                                " },
+	{ run_command, "%s",           "xtitle" },
 };
